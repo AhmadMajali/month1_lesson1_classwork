@@ -1,10 +1,8 @@
 public class Mercedes extends Car{
-    @Override
-    public void Drive() {
 
 
-    }
     public  String driveSound;
+    public String newSound;
 
     public Mercedes(String driveSound) {
         this.driveSound = driveSound;
@@ -18,5 +16,28 @@ public class Mercedes extends Car{
         this.driveSound = driveSound;
     }
 
+    public void setNewSound(String newSound) {
+        this.newSound = newSound;
+    }
+
+    @Override
+    public void Drive() {
+
+    }
+
+    @Override
+    public void getNewSound() {
+
+    }
+
+    @Override
+    public void getNewSound(Car car) {
+
+    }
+
+    @Override
+    public void getNewSound(Mercedes mercedes) {
+        getNewSound();
+    }
 }
 
