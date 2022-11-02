@@ -1,4 +1,5 @@
 public class Road {
+    // Аль Маджали Ахмад, второй месяц андроида, группа с 4 по 6, домашнее задание 2 урока
     public static void main(String[] args) {
         BMW bmw = new BMW();
         Mercedes mercedes = new Mercedes();
