@@ -10,8 +10,8 @@ public class Road {
         bmw.setNewSound("vrrrrrrr");
         mercedes.setNewSound("oarrrrrr");
         CarRepoImpl carRepo = new CarRepoImpl();
-        carRepo.getNewSound(bmw);
-        carRepo.getNewSound(mercedes);
+        carRepo.newSound(bmw);
+        carRepo.newSound(mercedes);
 
     }
     public static void drive(Car car) {

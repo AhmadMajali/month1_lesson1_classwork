@@ -4,7 +4,5 @@ public class CarRepoImpl implements CarRepo {
 
     }
 
-    public void getNewSound(Car car){
-        System.out.println(car.getNewSound());
-    };
+
 }
