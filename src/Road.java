@@ -1,34 +1,23 @@
-public class Road{
+public class Road {
     public static void main(String[] args) {
-      BMW bmw = new BMW("");
-      bmw.setDriveSound("brrrrr");
-      bmw.setNewSound("fdggdggg");
-        System.out.println(bmw.getDriveSound());
-      Mercedes mercedes = new Mercedes("");
-      mercedes.setDriveSound("vvvvvvrrr");
-      mercedes.setNewSound("dfvfdsfd");
-        System.out.println(mercedes.getDriveSound());
+        BMW bmw = new BMW();
+        Mercedes mercedes = new Mercedes();
+        bmw.setSoundDrive("vnnnnn");
+        mercedes.setSoundDrive("gaaaang");
+        drive(mercedes);
+        drive(bmw);
+        bmw.setNewSound("vrrrrrrr");
+        mercedes.setNewSound("oarrrrrr");
+        CarRepoImpl carRepo = new CarRepoImpl();
+        carRepo.getNewSound(bmw);
+        carRepo.getNewSound(mercedes);
 
     }
-   public void Cars(BMW bmw, Mercedes mercedes){
-        bmw.Drive();
-        mercedes.Drive();
-
-    }
-    public void Cars(){
-        Cars();
-        Cars();
-    }
-    public void main(){
-        CarRepo carRepo = new CarRepo() {
-            @Override
-            public void newSound(Car car) {
-                System.out.println(car.getNewSound());
-            }
-        };
+    public static void drive(Car car) {
+        car.drive();
     }
 
-}
+    }
 
 
 

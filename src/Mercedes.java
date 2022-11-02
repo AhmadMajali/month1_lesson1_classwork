@@ -1,43 +1,43 @@
 public class Mercedes extends Car{
-
-
-    public  String driveSound;
-    public String newSound;
-
-    public Mercedes(String driveSound) {
-        this.driveSound = driveSound;
-    }
-
-    public String getDriveSound() {
-        return driveSound;
-    }
-
-    public void setDriveSound(String driveSound) {
-        this.driveSound = driveSound;
-    }
+    private String NewSound;
 
     public void setNewSound(String newSound) {
-        this.newSound = newSound;
+        NewSound = newSound;
+    }
+
+    private String drive;
+
+    public String getDrive() {
+        return drive;
+    }
+
+    public void setDrive(String drive) {
+        this.drive = drive;
+    }
+
+    public String getSoundDrive() {
+        return soundDrive;
+    }
+
+    public void setSoundDrive(String soundDrive) {
+        this.soundDrive = soundDrive;
+    }
+
+    private String soundDrive;
+
+
+    @Override
+    public void drive() {
+        System.out.println(soundDrive);
+
     }
 
     @Override
-    public void Drive() {
+    public String getNewSound() {
+
+        return NewSound;
 
     }
 
-    @Override
-    public void getNewSound() {
-
-    }
-
-    @Override
-    public void getNewSound(Car car) {
-
-    }
-
-    @Override
-    public void getNewSound(Mercedes mercedes) {
-        getNewSound();
-    }
 }
 

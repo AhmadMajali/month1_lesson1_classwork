@@ -1,43 +1,46 @@
 public class BMW extends Car {
-    @Override
-    public void Drive() {
-        setDriveSound(driveSound);
-    }
-
-    public String driveSound;
-    public String newSound;
-
-    public String getDriveSound() {
-        return driveSound;
-    }
-
-    public void setDriveSound(String driveSound) {
-        this.driveSound = driveSound;
-    }
-
-    public BMW(String driveSound) {
-        this.driveSound = driveSound;
-    }
-
-    @Override
-    public void getNewSound() {
-
-    }
-
-    @Override
-    public void getNewSound(Car car) {
-
-    }
-
+    private String drive;
+    private String NewSound;
 
     public void setNewSound(String newSound) {
-        this.newSound = newSound;
+        NewSound = newSound;
+    }
+
+    public String getDrive() {
+        return drive;
+    }
+
+    public void setDrive(String drive) {
+        this.drive = drive;
+    }
+
+    public String getSoundDrive() {
+        return soundDrive;
+    }
+
+    public void setSoundDrive(String soundDrive) {
+        this.soundDrive = soundDrive;
+    }
+
+    private String soundDrive;
+
+    public String driveSound() {
+        return soundDrive;
     }
 
     @Override
-    public void getNewSound(BMW bmw) {
-        getNewSound(bmw);
+    public void drive() {
+        System.out.println(soundDrive);
 
 
     }
-}
+
+    @Override
+    public String getNewSound() {
+
+        return NewSound;
+    }
+    }
+
+
+
